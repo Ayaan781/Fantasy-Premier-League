@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f5f8">
+  <meta name="description" content="Review submitted FPL squads, add your feedback and prepare a reply.">
+  <title>Review desk — FPL Sidekick</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="FPL Sidekick home"><span class="brand-mark" aria-hidden="true"><span></span><span></span></span><span>FPL <b>Sidekick</b></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="team.html">Build your squad</a>
+      <details class="nav-more is-active"><summary>More</summary><div class="nav-menu"><a href="how-it-works.html">How it works</a><a href="about.html">About us</a><a class="is-current" href="review.html" aria-current="page">Review desk <span>demo</span></a></div></details>
+    </nav>
+    <details class="mobile-nav">
+      <summary><span class="mobile-nav-icon" aria-hidden="true"></span>Menu</summary>
+      <nav class="mobile-nav-panel" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="team.html">Build your squad</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="about.html">About us</a>
+        <a class="is-current" href="review.html" aria-current="page">Review desk <span class="mobile-nav-tag">demo</span></a>
+      </nav>
+    </details>
+    <a class="button button-small button-dark header-cta" href="team.html">Build a squad <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="wrap review-main">
+    <section class="page-hero">
+      <div><p class="eyebrow"><span class="eyebrow-dot"></span> REVIEW WORKSPACE · LOCAL DEMO</p><h1>Your review <span>desk.</span></h1><p>Open a submission, check the automatic player notes, add your own feedback, then prepare a reply to the manager.</p></div>
+      <aside class="page-note">Formspree emails incoming requests to its configured review inbox. This demo page only displays submissions saved in the current browser.</aside>
+    </section>
+    <p class="review-status-note"><strong>Local review desk:</strong> squad requests are emailed through Formspree when submitted, but they do not sync into this queue from another device. This page has no reviewer login or privacy protection; use the inbox for incoming requests and keep human replies manual.</p>
+    <div class="review-layout">
+      <aside class="review-queue" aria-labelledby="queue-title"><div class="review-queue-head"><h2 id="queue-title">Submissions</h2><span class="queue-count" id="queue-count">0</span></div><div class="submission-list" id="submission-list"></div></aside>
+      <div class="review-empty" id="review-empty">No submissions saved in this browser yet. Use the team builder, fill all 15 slots, and submit a squad to test the review flow.</div>
+      <article class="review-detail" id="review-detail" hidden aria-live="polite"></article>
+    </div>
+  </main>
+  <footer class="site-footer wrap"><span>FPL Sidekick <span class="footer-dot">·</span> Internal prototype</span><span><a href="how-it-works.html">Review method</a><span class="footer-dot">·</span><a href="team.html">Team builder</a></span></footer>
+  <script src="review.js"></script>
+</body>
+</html>
